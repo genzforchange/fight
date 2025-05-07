@@ -1,0 +1,175 @@
+/* === Reset & Box Sizing === */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: "Lexend", sans-serif;
+  line-height: 1.5;
+  color: #231f20;
+  background: linear-gradient(rgba(64, 101, 175, 0.5), rgba(64, 101, 175, 0.5)),
+    url("https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/PurpleBackground.png?v=1745193649120")
+      no-repeat center center / cover;
+  background-color: #494a6e;
+}
+
+a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: "Anton SC", sans-serif;
+  font-size: 21px;
+  text-decoration: none;
+  color: #f8f7f3;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 50px;
+}
+
+.bullhorn {
+  width: 150px;
+  margin-left: 100px;
+  margin-top: 75px;
+}
+
+/* === Hero Section === */
+.hero {
+  color: #f8f7f3;
+  text-align: center;
+  padding: 25px;
+  margin-top: -150px;
+}
+
+.hero h1 {
+  font-family: "Anton SC", sans-serif;
+  font-size: 55px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.hero .lead {
+  font-size: 21px;
+  max-width: 720px;
+  margin: 0 auto 50px;
+}
+
+/* === Content Card === */
+.card {
+  background-image: linear-gradient(
+      rgba(64, 101, 175, 0.5),
+      rgba(64, 101, 175, 0.5)
+    ),
+    url("https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/white-crinkled-paper-texture-background.jpg?v=1744848869879")
+      no-repeat center center / cover;
+  background: #f8f7f3;
+  max-width: 680px;
+  margin: -2rem auto 3rem;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  position: relative;
+}
+
+.card h2 {
+  font-family: "Anton SC", sans-serif;
+  font-size: 46px;
+  color: #494a6e;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  text-align: left;
+  letter-spacing: 1px;
+}
+
+.card p {
+  font-size: 16px;
+  margin-bottom: 1rem;
+}
+
+/* === CTA Button === */
+.cta-btn {
+  display: inline-block;
+  max-width: 600px;
+  background: #494A6E;
+  color: #F8F7F3;
+  font-family: "Anton SC", sans-serif;
+  font-size: 26px;
+  padding: 15px 30px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-top: 25px;
+}
+
+.cta-btn:hover {
+  background-color: transparent;
+  outline: solid;
+  outline-color: #494A6E;
+  outline-width: 3px;
+  color: #494A6E;
+}
+
+/* === Instructions Text === */
+.instructions {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  text-align: center;
+  color: #231f20;
+}
+
+/* === Footer === */
+footer {
+  background: url("https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/AdobeStock_315826297.jpeg?v=1744850684178") no-repeat center / cover;
+  text-align: center;
+  font-size: 16px;
+  padding: 100px 50px 50px;
+  margin-top: -175px;
+  position: relative;
+  z-index: 0;
+}
+
+footer img {
+  width: 25%;
+}
+
+@media (max-width: 600px){
+  
+  footer img {
+    width: 100%;
+  }
+}
+
+/* === Responsive Styles === */
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero .lead {
+    font-size: 1rem;
+  }
+
+  .card {
+    margin: -1.5rem 1rem 2rem;
+    padding: 1.5rem;
+  }
+
+  .card h2 {
+    font-size: 1.5rem;
+  }
+
+  .cta-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
