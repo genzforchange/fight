@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-34WLTHFXXQ"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-34WLTHFXXQ");
+    </script>
+    <meta charset="UTF-8" />
+    <!-- Primary Meta Tags -->
+    <title>FIGHT - A Toolkit by Gen-Z for Change</title>
+    <meta name="title" content="FIGHT - A Toolkit by Gen-Z for Change" />
+    <meta
+      name="description"
+      content="Gen-Z for Change’s FIGHT Toolkit empowers you to combat oppressive U.S. immigration policies—fund rapid-response groups, learn your rights, register to vote, and hold companies accountable."
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://gz4c-fight.glitch.me/" />
+    <meta property="og:title" content="FIGHT - A Toolkit by Gen-Z for Change" />
+    <meta
+      property="og:description"
+      content="Gen-Z for Change’s FIGHT Toolkit empowers you to combat oppressive U.S. immigration policies—fund rapid-response groups, learn your rights, register to vote, and hold companies accountable."
+    />
+    <meta
+      property="og:image"
+      content="https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/FIGHT_ShareCard.png?v=1746629996485"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/FIGHT_ShareCard.png?v=1746629996485" />
+    <meta property="twitter:url" content="https://gz4c-fight.glitch.me/" />
+    <meta
+      property="twitter:title"
+      content="FIGHT - A Toolkit by Gen-Z for Change"
+    />
+    <meta
+      property="twitter:description"
+      content="Gen-Z for Change’s FIGHT Toolkit empowers you to combat oppressive U.S. immigration policies—fund rapid-response groups, learn your rights, register to vote, and hold companies accountable."
+    />
+    <meta
+      property="twitter:image"
+      content="https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/FIGHT_ShareCard.png?v=1746629996485"
+    />
+
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/BullHorn.svg?v=1744859151494"
+    />
+    <!--     <link
+      rel="alternate"
+      href="https://gz4c-fight.glitch.me/index.html"
+      hreflang="en"
+    />
+    <link
+      rel="alternate"
+      href="https://gz4c-fight.glitch.me/es/index.html"
+      hreflang="es"
+    /> -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FIGHT Toolkit</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!--      &lt;link rel="alternate" href="http://example.com/en/" hreflang="en" /&gt; 
+   &lt;link rel="alternate" href="http://example.com/es/" hreflang="es" /&gt;  -->
+  </head>
+  <body>
+    <div class="header-wrapper" id="header">
+      <header class="site-header">
+        <div class="logo-group">
+          <!--    ENGLISH SPANISH active button  on right side of page / getting inspo from other sites + do research -->
+          <img
+            class="bullhorn"
+            src="https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/BullHorn.svg?v=1744859151494"
+            alt="Bullhorn"
+            onclick="window.open('https://gz4c-fight.glitch.me/')"
+          />
+          <img
+            class="letter-F"
+            src="https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/F.svg?v=1744861771480"
+            alt="F"
+            data-hover-src="https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/RedF.svg?v=1744861761589"
+            onmouseover="this.src = this.dataset.hoverSrc"
+            onclick="scrollToSection('fundraise')"
+            onmouseout="this.src = 'https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/F.svg?v=1744861771480'"
+          />
+          <img
+            class="letter-I"
+            src="https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/I.svg?v=1744861775676"
+            alt="I"
+            data-hover-src="https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/OrangeI.svg?v=1744861773560"
+            onmouseover="this.src = this.dataset.hoverSrc"
+            onclick="scrollToSection('invoke')"
+            onmouseout="this.src = 'https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/I.svg?v=1744861775676'"
+          />
+          <img
+            class="letter-G"
+            src="https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/G.svg?v=1744861780190"
+            alt="G"
+            data-hover-src="https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/GreenG.svg?v=1744861778280"
+            onmouseover="this.src = this.dataset.hoverSrc"
+            onclick="scrollToSection('gotv')"
+            onmouseout="this.src = 'https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/G.svg?v=1744861780190'"
+          />
+          <img
+            class="letter-H"
+            src="https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/H.svg?v=1744861784625"
+            alt="H"
+            data-hover-src="https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/BlueH.svg?v=1744861782322"
+            onmouseover="this.src = this.dataset.hoverSrc"
+            onclick="scrollToSection('hold')"
+            onmouseout="this.src = 'https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/H.svg?v=1744861784625'"
+          />
+          <img
+            class="letter-T"
+            src="https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/T.svg?v=1744861788384"
+            alt="T"
+            data-hover-src="https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/PurpleT.svg?v=1744861786506"
+            onmouseover="this.src = this.dataset.hoverSrc"
+            onclick="scrollToSection('action')"
+            onmouseout="this.src = 'https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/T.svg?v=1744861788384'"
+          />
+        </div>
+        <div class="header-actions">
+          <div class="language-dropdown">
+            <button class="lang-btn">
+              <span class="flag-emoji">🇺🇸</span> EN <span class="arrow">▾</span>
+            </button>
+            <ul class="lang-menu">
+              <li>
+                <a href="#"> <span class="flag-emoji">🇺🇸</span> EN </a>
+              </li>
+              <li>
+                <a href="es/index.html">
+                  <span class="flag-emoji">🇲🇽</span> ES
+                </a>
+              </li>
+            </ul>
+          </div>
+          <a
+            href="https://twitter.com/share?ref_src=twsrc%5Etfw"
+            class="twitter-share-button"
+            data-text="FIGHT Toolkit Sample Embed Tweet "
+            data-via="genzforchange"
+            data-show-count="false"
+            >Tweet</a
+          >
+        </div>
+        <script
+          async
+          src="https://platform.twitter.com/widgets.js"
+          charset="utf-8"
+        ></script>
+      </header>
+    </div>
+
+    <section class="frame main-frame">
+      <div class="main-content">
+        <nav class="fight-subtitle">
+          <span
+            data-color="#c62828"
+            onclick="scrollToSection('fundraise', this); this.style.color = this.getAttribute('data-color');"
+            style="color: #000"
+            onmouseover="this.style.color = this.getAttribute('data-color')"
+            onmouseout="this.style.color = '#000'"
+            >FUND RAPID RESPONSE ORGS</span
+          >
+          <span
+            data-color="#ef6c00"
+            onclick="scrollToSection('invoke', this); this.style.color = this.getAttribute('data-color');"
+            style="color: #000"
+            onmouseover="this.style.color = this.getAttribute('data-color')"
+            onmouseout="this.style.color = '#000'"
+            >INVOKE YOUR RIGHTS</span
+          >
+          <span
+            data-color="#43a047"
+            onclick="scrollToSection('gotv', this); this.style.color = this.getAttribute('data-color');"
+            style="color: #000"
+            onmouseover="this.style.color = this.getAttribute('data-color')"
+            onmouseout="this.style.color = '#000'"
+            >GET OUT THE VOTE</span
+          >
+          <span
+            data-color="#1565c0"
+            onclick="scrollToSection('hold', this); this.style.color = this.getAttribute('data-color');"
+            style="color: #000"
+            onmouseover="this.style.color = this.getAttribute('data-color')"
+            onmouseout="this.style.color = '#000'"
+            >HOLD COMPANIES ACCOUNTABLE</span
+          >
+          <span
+            data-color="#4527a0"
+            onclick="scrollToSection('action', this); this.style.color = this.getAttribute('data-color');"
+            style="color: #000"
+            onmouseover="this.style.color = this.getAttribute('data-color')"
+            onmouseout="this.style.color = '#000'"
+            >TAP-IN TO PARTNERS</span
+          >
+        </nav>
+        <div class="fight-blurb">
+          <p>
+            The current state of immigration policy in the United States is not
+            only inadequate, it is confusing, dehumanizing, and cruel by design.
+            Every single day, immigrants face ostracization from essential
+            pillars of society, constant infliction of fear, and brutalization
+            by a state apparatus for simply seeking a new life.
+            <br /><br />
+            With the return of the Trump administration, we’ve seen a sharp rise
+            in demonization and vicious intimidation of immigrant communities
+            rhetorically, legislatively, and on-the-ground.
+            <br /><br />
+            In response, Gen-Z for Change has launched <b>FIGHT:</b> a
+            comprehensive toolkit designed to combat this system of oppression
+            through impactful digital and on-the-ground mobilization. Rooted in
+            abolition, <b>FIGHT</b> is designed to work towards dismantling this
+            violent status quo and to build towards a future guarantee of
+            safety, freedom, and dignity for all immigrants.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="fundraise" class="frame">
+      <div class="content-box red">
+        <!-- LEFT column: heading, copy, button -->
+        <div class="text-section">
+          <h2>FUND RAPID RESPONSE ORGS</h2>
+          <p>
+            Across the country, rapid-response groups are mobilizing to provide
+            emergency alerts, legal support, and material intervention in
+            response to ICE activity. These primarily grassroots organizations
+            are unquestionable lifelines for immigrant communities, but
+            oftentimes go without access to the institutional funding and
+            resources they need to exist. Click here to split a DONATION to 23
+            of these crucial groups, helping to sustain their frontline defense
+            against state violence!
+          </p>
+          <button
+            class="fund-button"
+            onclick="window.open('https://secure.actblue.com/donate/fight-ice','_blank')"
+          >
+            DONATE HERE
+          </button>
+        </div>
+
+        <!-- RIGHT column: bento grid of grouped orgs -->
+        <!--         <div class="fundraise-bento">
+          <div class="bento-box box1"> -->
+        <!--             NYC AND DMV -->
+        <!--             <a href="https://wearecasa.org" target="_blank">CASA de Maryland</a>
+            <a href="https://wearecasa.org/virginia/" target="_blank"
+              >CASA de Virginia</a
+            >
+            <a href="https://www.dcmigrantmutualaid.org" target="_blank"
+              >Migrant Solidarity Mutual Aid Network</a
+            >
+          </div> -->
+
+        <!--           <div class="bento-box box2"> -->
+        <!--        NATIONAL      -->
+        <!--             <a href="https://www.freedomforimmigrants.org" target="_blank"
+              >Freedom for Immigrants</a
+            >
+            <a href="https://immigrationequality.org" target="_blank"
+              >Immigration Equality</a
+            >
+            <a href="https://immigrantjustice.org" target="_blank"
+              >National Immigrant Justice Center</a
+            >
+            <a href="https://www.tahirih.org" target="_blank"
+              >Tahirih Justice Center</a
+            >
+          </div> -->
+
+        <!--           <div class="bento-box box3a tall"> -->
+        <!--     SOUTH         -->
+        <!--             <a href="https://www.advancingjustice-atlanta.org" target="_blank"
+              >Asian Americans Advancing Justice - Atlanta</a
+            >
+            <a href="https://floridaimmigrant.org" target="_blank"
+              >Florida Immigrant Coalition</a
+            >
+            <a href="https://glahr.org" target="_blank"
+              >Georgia Latino Alliance for Human Rights</a
+            >
+            <a href="https://houstonimmigration.org" target="_blank"
+              >Houston Immigration Legal Services Collaborative</a
+            >
+            <a href="https://www.siembranc.org" target="_blank">Siembra NC</a>
+          </div>
+
+          <div class="bento-box box4"> -->
+        <!--             <a href="https://www.nyic.org" target="_blank"
+              >New York Immigration Coalition</a
+            >
+          </div>
+
+          <div class="bento-box box5 tall"> -->
+        <!--         WEST     -->
+        <!--             <a href="https://www.chirla.org" target="_blank"
+              >Coalition for Humane Immigrant Rights of Los Angeles (CHIRLA)</a
+            >
+            <a href="https://www.immdef.org" target="_blank"
+              >Immigrant Defenders Law Center</a
+            >
+            <a href="https://ic4ij.org" target="_blank"
+              >Inland Coalition for Immigrant Justice (California)</a
+            >
+            <a href="https://www.nmdreamteam.org" target="_blank"
+              >New Mexico Dream Team</a
+            >
+            <a href="https://www.northbayop.org" target="_blank"
+              >North Bay Organizing Project</a
+            >
+            <a href="https://www.nwirp.org" target="_blank"
+              >Northwest Immigrant Rights Project</a
+            >
+          </div>
+
+          <div class="bento-box box6"> -->
+        <!--              -->
+        <!--             <a href="https://nakasec.org" target="_blank"
+              >National Korean American Service & Education Consortium
+              (NAKASEC)</a
+            >
+          </div>
+          <div class="bento-box box3b"> -->
+        <!-- MIDWEST -->
+        <!--             <a href="https://vdlf.org/es/homepage-es/" target="_blank"
+              >Voces de la Frontera</a
+            > -->
+        <!--           </div>
+        </div>
+      </div> -->
+      </div>
+    </section>
+
+    <!--         </div>
+        <div class="grid-box grid-6">
+          <a href="#">Freedom for Immigrants
+                      Tahirih Justice Center
+                      Southern Poverty Law Center
+                      National Korean American Service and Education Consortium (NAKASEC)
+                      Immigration Equality
+                      National Immigrant Justice Center
+          </a>
+          <a href="#">Coalition for Humane Immigrant Rights of Los Angeles (CHIRLA)
+                      North Bay Organizing Project
+                      Florida Immigrant Coalition
+                      Georgia Latino Alliance for Human Rights
+                      Asian Americans Advancing Justice - Atlanta
+                      Houston Immigration Legal Services Collaborative
+          </a>
+          <a href="#">Northwest Immigrant Rights Project
+                      Voces de la Frontera
+                      Immigrant Defenders Law Center
+                      Inland Coalition for Immigrant Justice (California) 
+                      Americans for Immigrant Justice 
+                      CASA de Maryland
+          </a> 
+          <a href="#">New Mexico Dream Team
+                      New York Immigration Coalition
+                      Siembra NC
+                      CASA de Virginia
+                      Migrant Solidarity Mutual Aid Network
+          </a>
+        </div>
+      </div> -->
+    <!--     </section> -->
+
+    <section id="invoke" class="frame">
+      <div class="content-box orange">
+        <div class="text-section">
+          <h2>INVOKE YOUR RIGHTS</h2>
+          <p>
+            In the current political climate of the United States, knowledge is
+            protection. When faced with ICE intimidation and manipulation,
+            knowing your rights can mean the difference between safety and
+            vulnerability for yourself and your community. In partnership with
+            the Immigrant Legal Resource Center and United We Dream, Gen-Z for
+            Change has developed clear, concise, and accessible resources
+            designed to effectively empower and educate.
+          </p>
+          <p>
+            These resources aren’t meant to be confined to our website, we
+            implore you to plaster them everywhere. Post them on social media,
+            drop them in group chats, tape them to bodega doors, bus stops,
+            schools– everywhere your community goes.
+          </p>
+
+          <a
+            href="https://cdn.glitch.me/859e2062-945b-4f6d-a3dc-96c31891dcad/KnowYourRightsGenZforChange.pdf?v=1746556695409"
+          >
+            <button class="invoke-button">
+              DOWNLOAD KNOW YOUR RIGHTS RESOURCES HERE
+            </button>
+          </a>
+        </div>
+        <!--         <div class="grid-box grid-4">
+          <a
+            href="https://drive.google.com/file/d/1r0u9q3YNqfkl5YbuJfghfQp6h6fmp7hJ/view?usp=sharing"
+            target="_blank"
+            >Resources</a
+          ><a
+            href="https://drive.google.com/file/d/1r0u9q3YNqfkl5YbuJfghfQp6h6fmp7hJ/view?usp=sharing"
+            target="_blank"
+            >Go</a
+          ><a
+            href="https://drive.google.com/file/d/1r0u9q3YNqfkl5YbuJfghfQp6h6fmp7hJ/view?usp=sharing"
+            target="_blank"
+            >Here</a
+          ><a
+            href="https://drive.google.com/file/d/1r0u9q3YNqfkl5YbuJfghfQp6h6fmp7hJ/view?usp=sharing"
+            target="_blank"
+            >Linked Here</a
+          >
+        </div> -->
+      </div>
+    </section>
+
+    <section id="gotv" class="frame">
+      <div class="content-box green">
+        <div class="text-section">
+          <h2>GET OUT THE VOTE</h2>
+          <p>
+            The utter cruelty of our immigration system isn’t accidental, but
+            rather it is rigorously upheld by elected officials who push
+            anti-immigrant policies and rhetoric at all levels of government. To
+            effectively dismantle this system of oppression, we need to replace
+            them with leaders who will adopt an abolitionist approach to
+            immigration policy today.
+          </p>
+          <p>
+            Click <b>BELOW</b> to check your voter registration, upcoming races
+            in your local community, and the policy stances of candidates to
+            fight for bold systemic change at the ballot box!
+          </p>
+          <button
+            class="gotv-button"
+            onclick="window.open('https://app.ballotready.org/','_blank')"
+          >
+            GET ELECTION-READY HERE
+          </button>
+        </div>
+        <!--         <div class="grid-box grid-4">
+          <a href="#">A</a><a href="#">B</a><a href="#">C</a><a href="#">D</a>
+        </div> -->
+      </div>
+    </section>
+
+    <section id="hold" class="frame">
+      <div class="content-box blue">
+        <div class="text-section">
+          <h2>HOLD COMPANIES ACCOUNTABLE</h2>
+          <p>
+            Right now, powerful and greedy companies are aiding and abetting ICE
+            and DHS’s violent attacks on the immigrant community, all in the
+            name of profit. Take Avelo, a commercial airliner, chartering
+            deportation flights in Arizona on behalf of the Trump
+            administration. Private companies have NO right terrorizing our
+            communities and everyone should be committed to materially
+            disrupting this disgusting operation. The game plan: Avelo is
+            actively recruiting new crew members to staff deportation flights.
+            So, we’ve coded a new tool to help them fill their application pool!
+            😉 TAKE ACTION by clicking the button below to automatically send a
+            job application about every 20 seconds to Avelo’s deportation flight
+            crew listing.
+          </p>
+          <button
+            class="hold-button"
+            onclick="window.open('https://gz4c-fight.glitch.me/h.html','_blank')"
+          >
+            TAKE ACTION HERE TO HOLD AVELO ACCOUNTABLE
+          </button>
+        </div>
+        <!--         <div class="grid-box grid-4">
+          <a href="#">A</a><a href="#">B</a><a href="#">C</a><a href="#">D</a>
+        </div> -->
+      </div>
+    </section>
+
+    <section id="action" class="frame">
+      <div class="content-box purple">
+        <div class="text-section">
+          <h2>TAP-IN TO PARTNERS</h2>
+          <p>
+            <b>FIGHT</b> wasn’t developed in a vacuum, rather being built
+            collaboratively with a coalition of trusted organizations leading
+            the fight for immigrant justice. From the Immigrant Legal Resource
+            Center to the Detention Watch Network, our partners have dedicated
+            years to organizing, educating, and bravely resisting systems of
+            dehumanization.
+          </p>
+          <p>
+            Across the country, these individual organizations are leading bold
+            campaigns including advocacy to shut down detention centers,
+            organize students on college campuses, and lobbying for
+            pro-immigrant legislation. This is the moment to deepen your
+            commitment to the immigrant community and plug into powerful and
+            time-tested tactics.
+          </p>
+          <button
+            class="tap-button"
+            onclick="window.open('https://gz4c-fight.glitch.me/t.html','_blank')"
+          >
+            GET INVOLVED WITH A PARTNER ORG HERE
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>For press inquiries please contact press@genzforchange.org.</p>
+      <br />
+      <a
+        href="https://www.genzforchange.org/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          src="https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/meddlingkids.png?v=1744848850367"
+          alt="made with love by Gen Z For Change's meddling kids"
+        />
+      </a>
+    </footer>
+
+    <script></script>
+    <script src="script.js"></script>
+  </body>
+</html>

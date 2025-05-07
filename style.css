@@ -1,0 +1,722 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton+SC&family=Lexend:wght@100..900&display=swap");
+
+/* ─────────────────────────────────────────────── */
+/* BASE STYLES */
+
+html,
+body {
+  font-family: "Lexend", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #f8f7f3;
+  scroll-behavior: smooth;
+  overflow: visible;
+}
+
+.lexend {
+  font-family: "Lexend", sans-serif;
+  font-style: normal;
+  font-optical-sizing: auto;
+}
+
+.anton-sc-regular,
+.main-title,
+.fight-subtitle,
+.text-section h2 {
+  font-family: "Anton SC", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+/* ─────────────────────────────────────────────── */
+/* HEADER SECTION */
+
+.header-wrapper {
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.site-header {
+  max-width: 1200px;
+  height: 175px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  border-radius: 24px;
+  background: url("https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/white-crinkled-paper-texture-background.jpg?v=1744848869879") no-repeat center / cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.after-scroll {
+  background-color: transparent;
+/*   transition: background-color 0.2s ease; */
+}
+
+/*    FAILED STICKY TEST    */
+/* .after-scroll .site-header {
+  height: 100px;
+  transition: height 0.2s ease-in-out;
+}
+
+.after-scroll .logo-group {
+  transform: scale(0.5);
+  transition: transform 0.2s ease-in-out;
+} */
+
+.bullhorn {
+  flex: 0 0 auto;
+  width: 10vw;
+  max-width: 200px;
+  min-width: 100px;
+  height: auto;
+}
+
+/* ─────────────────────────────────────────────── */
+/* HEADER ACTIONS */
+
+.header-actions {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 100px;
+  z-index: 1001;
+  margin: 10px;
+}
+
+.twitter-share-button {
+  position: relative;
+  width: 10px;
+  margin: 0;
+  z-index: 1;
+}
+
+.language-dropdown {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* for some reason it only works when this is here */
+.site-header {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: url("https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/white-crinkled-paper-texture-background.jpg?v=1744848869879") no-repeat center / cover;
+  border-radius: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  max-width: 1200px;
+  height: 175px;
+  margin: 0 auto;
+}
+
+/* Language button styles */
+.lang-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: #231F20;
+  font-size: 16px;
+  gap: 0.2rem;
+}
+
+/* Flag + arrow */
+.flag-emoji {
+  font-size: 16px;
+  margin-right: 3px;
+}
+.arrow {
+  font-size: 16px;
+}
+
+/* Dropdown menu */
+.lang-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 10px;
+  padding: 0;
+  list-style: none;
+  background: #F8F7F3;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
+  border-radius: 5px;
+  display: none;
+  white-space: nowrap;
+  z-index: 10;
+}
+
+.language-dropdown:hover .lang-menu,
+.language-dropdown:focus-within .lang-menu {
+  display: block;
+}
+
+.lang-menu li a {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  color: #231F20;
+  text-decoration: none;
+  gap: 5px;
+}
+
+.lang-menu li a:hover {
+  background: #F8F7F3;
+}
+
+/* ─────────────────────────────────────────────── */
+/* LETTER STYLES */
+
+[class^="letter-"] {
+  margin-left: 20px;
+  flex: 0 0 auto;
+  width: 8vw;
+  max-width: 60px;
+  min-width: 32px;
+  height: auto;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.letter-F { width: 50px; }
+.letter-I { width: 20px; height: 110px; }
+.letter-G { width: 65px; }
+.letter-H { width: 55px; }
+.letter-T { width: 60px; }
+
+[class^="letter-"]:hover {
+  transform: scale(1.15);
+}
+
+.selected {
+  transform: scale(1.15);
+}
+
+/* ─────────────────────────────────────────────── */
+/* RESPONSIVE HEADER */
+
+@media (max-width: 600px) {
+  .site-header {
+    height: 100px;
+    justify-content: center;
+    padding: 1rem;
+  }
+
+  .bullhorn {
+    width: 90px;
+    max-width: 150px;
+    min-width: 80px;
+  }
+
+  [class^="letter-"] {
+    width: 8vw;
+    max-width: 30px;
+    min-width: 0;
+  }
+  
+  .letter-I {
+    height: 60px;
+  }
+}
+
+/* ─────────────────────────────────────────────── */
+/* FRAME SECTION */
+
+.frame {
+  min-height: 100px;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+  position: relative;
+  z-index: 1;
+  scroll-margin-top: 220px;
+
+}
+
+.main-frame {
+  padding: 150px 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  z-index: 0;
+  background: linear-gradient(rgba(248, 247, 243, 0.75), rgba(248, 247, 243, 0.75)),
+    url("https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/squared-paper-texture.jpg?v=1744862407631") no-repeat center / cover;
+  margin-top: -100px;
+}
+
+
+/* ─────────────────────────────────────────────── */
+/* CONTENT SECTIONS */
+
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-title {
+  font-size: 89px;
+  color: #231f20;
+  letter-spacing: 5px;
+  padding-left: 50px;
+}
+
+.fight-subtitle {
+  font-size: 46px;
+  color: #231f20;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: right;
+  flex: 1 1 300px;
+  padding-right: 25px;
+  border-right: 1px solid #231f20;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  cursor: pointer;
+}
+
+.fight-subtitle span {
+  transition: color 0.3s;
+}
+
+.fight-blurb {
+  font-size: 21px;
+  color: #231f20;
+  flex: 1 1 600px;
+  text-align: left;
+  max-width: 600px;
+  margin-top: 0;
+}
+
+.content-box {
+  width: 100%;
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: #f8f7f3;
+  margin: -125px 0 75px;
+}
+
+.text-section {
+  flex: 1;
+  width: 300px;
+}
+
+.text-section h2 {
+  font-size: 64px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+.text-section p {
+  font-size: 21px;
+  margin-bottom: 25px;
+  max-width: 700px;
+}
+
+mark {
+  background-color: #ef4347;
+  color: #f8f7f3;
+  padding: 3px;
+  line-height: 1;
+}
+
+/* ─────────────────────────────────────────────── */
+/* RESPONSIVE CONTENT */
+@media (max-width: 600px) {
+  
+  .main-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  max-width: 1200px;
+  margin: 50px;
+  align-items: center;
+  justify-content: space-between;
+}
+  
+.fight-subtitle {
+  font-size: 34px;
+  color: #231f20;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: right;
+  flex: 1 1 300px;
+  padding-right: 25px;
+  border-right: 1px solid #231f20;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  cursor: pointer;
+}
+
+
+.fight-blurb {
+  font-size: 16px;
+  color: #231f20;
+  flex: 1 1 600px;
+  text-align: left;
+  max-width: 600px;
+  margin-top: 0;
+}
+  
+  .text-section h2 {
+  font-size: 34px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+  
+.text-section p {
+  font-size: 16px;
+  margin-bottom: 0px;
+  max-width: 700px;
+}
+  
+}
+/* ─────────────────────────────────────────────── */
+/* GRID */
+
+.grid-box {
+  display: grid;
+  gap: 25px;
+}
+
+.grid-6 {
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(2, 100px);
+}
+
+.grid-4 {
+  grid-template-columns: repeat(2, 100px);
+  grid-template-rows: repeat(2, 100px);
+}
+
+/* ─────────────────────────────────────────────── */
+/* BUTTONS */
+
+.grid-box a,
+.custom-button {
+  background: #f8f7f3;
+  font-family: "Lexend", sans-serif;
+  font-size: 16px;
+  border: 2px solid #231f20;
+  color: #231f20;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: 0.3s;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+.fund-button {
+  display: inline-block;
+  max-width: 600px;
+  background: #fafaf5;
+  color: #ef4347;
+  font-family: "Anton SC", sans-serif;
+  font-size: 26px;
+  padding: 15px 30px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-top: 25px;
+}
+
+.fund-button:hover {
+  background-color: transparent;
+  outline: 3px solid #fafaf5;
+  color: #fafaf5;
+}
+
+/* ─────────────────────────────────────────────── */
+/* TEXTURED BACKGROUNDS */
+
+.red {
+  background: linear-gradient(rgba(239, 67, 71, 0.5), rgba(239, 67, 71, 0.5)),
+    url("https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/RedTexture.png?v=1745193146500") no-repeat center / cover;
+  background-color: #ef4347;
+}
+
+.orange {
+  background: linear-gradient(rgba(246, 122, 61, 0.5), rgba(246, 122, 61, 0.5)),
+    url("https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/OrangeTexture.png?v=1745193430524") no-repeat center / cover;
+  background-color: #f67a3d;
+}
+
+.green {
+  background: linear-gradient(rgba(92, 148, 111, 0.5), rgba(92, 148, 111, 0.5)),
+    url("https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/GreenTexture.png?v=1745193618861") no-repeat center / cover;
+  background-color: #5c946f;
+}
+
+.blue {
+  background: linear-gradient(rgba(64, 101, 175, 0.5), rgba(64, 101, 175, 0.5)),
+    url("https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/BlueBackground.png?v=1745193617054") no-repeat center / cover;
+  background-color: #4065af;
+}
+
+.purple {
+  background: linear-gradient(rgba(73, 74, 110, 0.5), rgba(73, 74, 110, 0.5)),
+    url("https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/PurpleBackground.png?v=1745193649120") no-repeat center / cover;
+  background-color: #494a6e;
+}
+
+/* ─────────────────────────────────────────────── */
+/* FOOTER */
+
+footer {
+  background: url("https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/AdobeStock_315826297.jpeg?v=1744850684178") no-repeat center / cover;
+  text-align: center;
+  font-size: 16px;
+  padding: 100px 50px 50px;
+  margin-top: -175px;
+  position: relative;
+  z-index: 0;
+}
+
+footer img {
+  width: 25%;
+}
+
+@media (max-width: 600px){
+  
+  footer img {
+    width: 100%;
+  }
+}
+
+/* ─────────────────────────────────────────────── */
+/* FUNDRAISE SECTION */
+
+.fundraise-container {
+  display: grid;
+  gap: 24px;
+  align-items: start;
+  padding: 60px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.fundraise-text {
+  color: #fafaf5;
+}
+
+.fundraise-text h2 {
+  font-family: "Anton SC", sans-serif;
+  font-size: 64px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.fundraise-text p {
+  font-size: 18px;
+  line-height: 1.4;
+  margin-bottom: 24px;
+}
+
+.invoke-button {
+  display: inline-block;
+  max-width: 600px;
+  background: #fafaf5;
+  color: #f67a3d;
+  font-family: "Anton SC", sans-serif;
+  font-size: 26px;
+  padding: 15px 30px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-top: 25px;
+}
+
+.invoke-button:hover {
+  background-color: transparent;
+  outline: solid;
+  outline-color: #fafaf5;
+  outline-width: 3px;
+  color: #fafaf5;
+}
+
+.gotv-button {
+  display: inline-block;
+  max-width: 600px;
+  background: #fafaf5;
+  color: #5c946f;
+  font-family: "Anton SC", sans-serif;
+  font-size: 26px;
+  padding: 15px 30px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-top: 25px;
+}
+
+.gotv-button:hover {
+  background-color: transparent;
+  outline: solid;
+  outline-color: #fafaf5;
+  outline-width: 3px;
+  color: #fafaf5;
+}
+
+.hold-button {
+  display: inline-block;
+  max-width: 600px;
+  background: #fafaf5;
+  color: #4065af;
+  font-family: "Anton SC", sans-serif;
+  font-size: 26px;
+  padding: 15px 30px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-top: 25px;
+}
+
+.hold-button:hover {
+  background-color: transparent;
+  outline: solid;
+  outline-color: #fafaf5;
+  outline-width: 3px;
+  color: #fafaf5;
+}
+
+.tap-button {
+  display: inline-block;
+  max-width: 600px;
+  background: #fafaf5;
+  color: #494a6e;
+  font-family: "Anton SC", sans-serif;
+  font-size: 26px;
+  padding: 15px 30px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-top: 25px;
+}
+
+.tap-button:hover {
+  background-color: transparent;
+  outline: solid;
+  outline-color: #fafaf5;
+  outline-width: 3px;
+  color: #fafaf5;
+}
+
+/* ─────────── Grid Layout for Fundraising ─────────── */
+.fundraise-bento {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 1fr 1.5fr 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+    "b1  b2  b3a"
+    "b4  b5  b3a"
+    "b6  b5  b3b";
+}
+
+@media (max-width: 1024px) {
+  .fundraise-bento {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+      "b1   b2"
+      "b3a  b3a"
+      "b4   b5"
+      "b6   b3b";
+  }
+}
+
+@media (max-width: 600px) {
+  .fundraise-bento {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "b1"
+      "b2"
+      "b3a"
+      "b4"
+      "b5"
+      "b6"
+      "b3b";
+  }
+}
+
+/* ─────────── Grid Area Assignments ─────────── */
+.box1 {
+  grid-area: b1;
+}
+.box2 {
+  grid-area: b2;
+}
+.box3a {
+  grid-area: b3a;
+}
+.box3b {
+  grid-area: b3b;
+}
+.box4 {
+  grid-area: b4;
+}
+.box5 {
+  grid-area: b5;
+}
+.box6 {
+  grid-area: b6;
+}
+
+/* ─────────── Bento Box Styling ─────────── */
+.bento-box {
+  background: #fafaf5;
+  padding: 25px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.bento-box.tall {
+  justify-content: space-between;
+}
+
+.bento-box a {
+  display: block;
+  margin-bottom: 6px;
+  color: #333333;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.bento-box a:hover,
+.bento-box a:focus {
+  text-decoration: underline;
+  color: #111111;
+}
