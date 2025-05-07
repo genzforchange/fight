@@ -49,6 +49,7 @@
             data-hover-src="https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/OrangeP.svg?v=1746474922130"
             onmouseover="this.src = this.dataset.hoverSrc"
             onmouseout="this.src = 'https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/P.svg?v=1746474893372'"
+            onclick="scrollToSection('fundraise')"
           />
           <img
             class="letter-O"
@@ -57,6 +58,7 @@
             data-hover-src="https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/PurpleO.svg?v=1746474926704"
             onmouseover="this.src = this.dataset.hoverSrc"
             onmouseout="this.src = 'https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/O.svg?v=1746474901384'"
+            onclick="scrollToSection('invoke')"
           />
           <img
             class="letter-D"
@@ -65,6 +67,7 @@
             data-hover-src="https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/GreenD.svg?v=1746474931537"
             onmouseover="this.src = this.dataset.hoverSrc"
             onmouseout="this.src = 'https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/D.svg?v=1746474907354'"
+            onclick="scrollToSection('gotv')"
           />
           <img
             class="letter-E"
@@ -73,6 +76,7 @@
             data-hover-src="https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/BlueE.svg?v=1746474934521"
             onmouseover="this.src = this.dataset.hoverSrc"
             onmouseout="this.src = 'https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/E.svg?v=1746474909901'"
+            onclick="scrollToSection('hold')"
           />
           <img
             class="letter-R"
@@ -81,6 +85,7 @@
             data-hover-src="https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/RedR.svg?v=1746474938028"
             onmouseover="this.src = this.dataset.hoverSrc"
             onmouseout="this.src = 'https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/R.svg?v=1746474918040'"
+            onclick="scrollToSection('action')"
           />
         </div>
         <div class="language-dropdown">
@@ -94,7 +99,9 @@
               >
             </li>
             <li>
-              <a href="https://gz4c.org/FIGHT/es/"><span class="flag-emoji">🇲🇽</span> ES</a>
+              <a href="https://gz4c.org/FIGHT/es/"
+                ><span class="flag-emoji">🇲🇽</span> ES</a
+              >
             </li>
           </ul>
         </div>
@@ -118,11 +125,46 @@
     <section class="frame main-frame">
       <div class="main-content">
         <nav class="fight-subtitle">
-          <span data-color="#c62828">REÚNE FONDOS</span>
-          <span data-color="#ef6c00">PROTEGE TUS DERECHOS</span>
-          <span data-color="#43a047">DECIDE CON TU VOTO</span>
-          <span data-color="#1565c0">EXIGE RESPONSABILIDAD</span>
-          <span data-color="#4527a0">ORGANIZA TU COMUNIDAD</span>
+          <span
+            data-color="#c62828"
+            onclick="scrollToSection('fundraise', this); this.style.color = this.getAttribute('data-color');"
+            style="color: #000"
+            onmouseover="this.style.color = this.getAttribute('data-color')"
+            onmouseout="this.style.color = '#000'"
+            >REÚNE FONDOS</span
+          >
+          <span
+            data-color="#ef6c00"
+            onclick="scrollToSection('invoke', this); this.style.color = this.getAttribute('data-color');"
+            style="color: #000"
+            onmouseover="this.style.color = this.getAttribute('data-color')"
+            onmouseout="this.style.color = '#000'"
+            >PROTEGE TUS DERECHOS</span
+          >
+          <span
+            data-color="#43a047"
+            onclick="scrollToSection('gotv', this); this.style.color = this.getAttribute('data-color');"
+            style="color: #000"
+            onmouseover="this.style.color = this.getAttribute('data-color')"
+            onmouseout="this.style.color = '#000'"
+            >DECIDE CON TU VOTO</span
+          >
+          <span
+            data-color="#1565c0"
+            onclick="scrollToSection('hold', this); this.style.color = this.getAttribute('data-color');"
+            style="color: #000"
+            onmouseover="this.style.color = this.getAttribute('data-color')"
+            onmouseout="this.style.color = '#000'"
+            >EXIGE RESPONSABILIDAD</span
+          >
+          <span
+            data-color="#4527a0"
+            onclick="scrollToSection('action', this); this.style.color = this.getAttribute('data-color');"
+            style="color: #000"
+            onmouseover="this.style.color = this.getAttribute('data-color')"
+            onmouseout="this.style.color = '#000'"
+            >ORGANIZA TU COMUNIDAD</span
+          >
         </nav>
         <div class="fight-blurb">
           <p>
@@ -260,10 +302,7 @@
             personal no será incluida en ningún envío. ¡Puedes enviar tantas
             solicitudes como quieras!
           </p>
-          <button
-            class="hold-button"
-            onclick="window.open('h.html')"
-          >
+          <button class="hold-button" onclick="window.open('h.html')">
             TOMA ACCIÓN
           </button>
         </div>
@@ -295,10 +334,7 @@
             inmigrante y conectarte con tácticas poderosas y probadas a lo largo
             del tiempo.
           </p>
-          <button
-            class="tap-button"
-            onclick="window.open('t.html')"
-          >
+          <button class="tap-button" onclick="window.open('t.html')">
             INVOLÚCRATE
           </button>
         </div>
@@ -316,11 +352,11 @@
         alt="Hecho con amor por los chicos entrometidos de Gen-Z for Change"
       />
     </footer>
-
-    <script>
+        <script src="script.js"></script>
+<!--     <script>
       function scrollToSection(id, el) {
         document.getElementById(id).scrollIntoView({ behavior: "smooth" });
         document.querySelectorAll(".fight-sub
-    </script>
+    </script> -->
   </body>
 </html>
