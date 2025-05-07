@@ -1,0 +1,417 @@
+<!-- <!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PODER Toolkit</title>
+    <link
+      rel="alternate"
+      href="https://gz4c-fight.glitch.me/index.html"
+      hreflang="en"
+    />
+    <link
+      rel="alternate"
+      href="https://gz4c-fight.glitch.me/es/index.html"
+      hreflang="es"
+    />
+    <link
+      rel="alternate"
+      href="https://gz4c-fight.glitch.me/index.html"
+      hreflang="x-default"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="header-wrapper">
+      <header class="site-header">
+        <div class="logo-group">
+          <img
+            class="bullhorn"
+            src="https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/BullHorn.svg?v=1744859151494"
+            alt="Bullhorn"
+          />
+          <img
+            class="letter-P"
+            src = "https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/P.svg?v=1746474893372"
+            alt="P"
+            data-hover-src="https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/OrangeP.svg?v=1746474922130"
+            onmouseover="this.src = this.dataset.hoverSrc"
+            onmouseout="this.src = 'https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/P.svg?v=1746474893372'"
+          />
+          <img
+            class="letter-O"
+            src="https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/O.svg?v=1746474901384"
+            alt="O"
+            data-hover-src="https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/PurpleO.svg?v=1746474926704"
+            onmouseover="this.src = this.dataset.hoverSrc"
+            onmouseout="this.src = 'https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/O.svg?v=1746474901384'"
+          />
+          <img
+            class="letter-D"
+            src="https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/D.svg?v=1746474907354"
+            alt="D"
+            data-hover-src="https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/GreenD.svg?v=1746474931537"
+            onmouseover="this.src = this.dataset.hoverSrc"
+            onmouseout="this.src = 'https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/D.svg?v=1746474907354'"
+          />
+          <img
+            class="letter-E"
+            src="https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/E.svg?v=1746474909901"
+            alt="E"
+            data-hover-src="https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/BlueE.svg?v=1746474934521"
+            onmouseover="this.src = this.dataset.hoverSrc"
+            onmouseout="this.src = 'https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/E.svg?v=1746474909901'"
+          />
+          <img
+            class="letter-R"
+            src="https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/R.svg?v=1746474918040"
+            alt="R"
+            data-hover-src="https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/RedR.svg?v=1746474938028"
+            onmouseover="this.src = this.dataset.hoverSrc"
+            onmouseout="this.src = 'https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/R.svg?v=1746474918040'"
+          />
+        </div>
+
+        <div class="language-dropdown">
+          <button class="lang-btn">
+            <span class="flag-emoji">🇺🇸</span> EN <span class="arrow">▾</span>
+          </button>
+          <ul class="lang-menu">
+            <li>
+              <a href="https://gz4c-fight.glitch.me/"
+                ><span class="flag-emoji">🇺🇸</span> EN</a
+              >
+            </li>
+            <li>
+              <a href="es/index.html"><span class="flag-emoji">🇲🇽</span> ES</a>
+            </li>
+          </ul>
+        </div>
+      </header>
+    </div>
+
+    <!-- INTRO PRINCIPAL -->
+    <section class="frame main-frame">
+      <div class="main-content">
+        <nav class="fight-subtitle">
+          <span
+            data-color="#ef4347"
+            onclick="scrollToSection('fundraise', this)"
+            style="color: #000"
+            >Reúne fondos</span
+          >
+          <span
+            data-color="#c62828"
+            onclick="scrollToSection('invoke', this)"
+            style="color: #000"
+            >Protege tus derechos</span
+          >
+          <span
+            data-color="#43a047"
+            onclick="scrollToSection('gotv', this)"
+            style="color: #000"
+            >Decide con tu voto</span
+          >
+          <span
+            data-color="#1565c0"
+            onclick="scrollToSection('hold', this)"
+            style="color: #000"
+            >Exige responsabilidad</span
+          >
+          <span
+            data-color="#4527a0"
+            onclick="scrollToSection('action', this)"
+            style="color: #000"
+            >Organiza tu comunidad</span
+          >
+        </nav>
+
+        <div class="fight-blurb">
+          <p>
+            La política migratoria actual en Estados Unidos no solo es
+            inadecuada, sino que también es confusa, deshumanizante y cruel por
+            diseño. Cada día, los inmigrantes enfrentan la exclusión de pilares
+            esenciales de la sociedad, la imposición constante del miedo y la
+            brutalización por parte del aparato estatal, simplemente por buscar
+            una nueva vida.
+            <br /><br />
+            Con el regreso de la administración Trump, hemos visto un fuerte
+            aumento en la demonización y la intimidación violenta contra las
+            comunidades inmigrantes, tanto a nivel retórico, legislativo como en
+            acciones sobre el terreno.
+            <br /><br />
+            En respuesta, Gen-Z for Change ha lanzado <b>PODER:</b> una
+            herramienta integral diseñada para combatir este sistema de opresión
+            a través de la movilización digital y presencial con impacto. Basada
+            en los principios de la abolición, <b>PODER</b> busca desmantelar
+            este violento status quo y construir un futuro que garantice
+            seguridad, libertad y dignidad para todas las personas inmigrantes.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 1: REÚNE FONDOS -->
+    <section id="fundraise" class="frame">
+      <div class="content-box red fundraise-container">
+        <div class="fundraise-text">
+          <h2>Reúne fondos</h2>
+          <p>
+            En todo el país, grupos de respuesta rápida se están movilizando
+            para ofrecer alertas de emergencia, apoyo legal e intervenciones
+            materiales frente a las actividades de ICE. Estas organizaciones, en
+            su mayoría comunitarias y de base, son salvavidas incuestionables
+            para las comunidades inmigrantes, pero a menudo carecen del
+            financiamiento institucional y de los recursos necesarios para
+            operar.
+          </p>
+          <p>
+            Haz clic aquí para dividir tu <strong>DONACIÓN</strong> entre 23 de
+            estos grupos cruciales, ayudando a sostener su defensa en primera
+            línea contra la violencia estatal.
+          </p>
+          <button
+            class="actblue-button"
+            onclick="window.open('https://secure.actblue.com','_blank')"
+          >
+            DONAR
+          </button>
+        </div>
+
+        <div class="fundraise-bento">
+          <!-- 1) Northeast -->
+          <div class="bento-box">
+            <h3>Noreste</h3>
+            <a href="https://wearecasa.org" target="_blank">CASA de Maryland</a>
+            <a href="https://wearecasa.org/virginia/" target="_blank"
+              >CASA de Virginia</a
+            >
+            <a href="https://www.dcmigrantmutualaid.org" target="_blank"
+              >Migrant Solidarity Mutual Aid Network</a
+            >
+            <a href="https://www.nyic.org" target="_blank"
+              >New York Immigration Coalition</a
+            >
+          </div>
+
+          <!-- 2) National -->
+          <div class="bento-box">
+            <h3>Nacional</h3>
+            <a href="https://www.freedomforimmigrants.org" target="_blank"
+              >Freedom for Immigrants</a
+            >
+            <a href="https://immigrationequality.org" target="_blank"
+              >Immigration Equality</a
+            >
+            <a href="https://immigrantjustice.org" target="_blank"
+              >National Immigrant Justice Center</a
+            >
+            <a href="https://nakasec.org" target="_blank">NAKASEC</a>
+            <a href="https://www.tahirih.org" target="_blank"
+              >Tahirih Justice Center</a
+            >
+          </div>
+
+          <!-- 3) South -->
+          <div class="bento-box">
+            <h3>Sur</h3>
+            <a href="https://www.advancingjustice-atlanta.org" target="_blank"
+              >AAAJ–Atlanta</a
+            >
+            <a href="https://floridaimmigrant.org" target="_blank"
+              >Florida Immigrant Coalition</a
+            >
+            <a href="https://glahr.org" target="_blank"
+              >Georgia Latino Alliance for Human Rights</a
+            >
+            <a href="https://houstonimmigration.org" target="_blank"
+              >Houston Immigration Legal Services Collaborative</a
+            >
+            <a href="https://www.siembranc.org" target="_blank">Siembra NC</a>
+            <a href="https://www.splcenter.org" target="_blank"
+              >Southern Poverty Law Center</a
+            >
+          </div>
+
+          <!-- 4) West -->
+          <div class="bento-box">
+            <h3>Oeste</h3>
+            <a href="https://www.chirla.org" target="_blank">CHIRLA</a>
+            <a href="https://www.immdef.org" target="_blank"
+              >Immigrant Defenders Law Center</a
+            >
+            <a href="https://ic4ij.org" target="_blank"
+              >Inland Coalition for Immigrant Justice (CA)</a
+            >
+            <a href="https://www.nmdreamteam.org" target="_blank"
+              >New Mexico Dream Team</a
+            >
+            <a href="https://www.northbayop.org" target="_blank"
+              >North Bay Organizing Project</a
+            >
+            <a href="https://www.nwirp.org" target="_blank"
+              >Northwest Immigrant Rights Project</a
+            >
+          </div>
+
+          <!-- 5) Midwest -->
+          <div class="bento-box">
+            <h3>Medio Oeste</h3>
+            <a href="https://vdlf.org/es/homepage-es/" target="_blank"
+              >Voces de la Frontera</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 2: PROTEGE TUS DERECHOS -->
+    <section id="invoke" class="frame">
+      <div class="content-box orange">
+        <div class="text-section">
+          <h2>Protege tus derechos</h2>
+          <p>
+            En el clima político actual de Estados Unidos, el conocimiento es
+            protección. Ante la intimidación y manipulación de ICE, conocer tus
+            derechos puede ser la diferencia entre la seguridad y la
+            vulnerabilidad para ti y tu comunidad.
+          </p>
+          <p>
+            En asociación con el Immigrant Legal Resource Center y United We
+            Dream, Gen-Z for Change ha desarrollado recursos claros, concisos y
+            accesibles diseñados para empoderar y educar de manera efectiva.
+          </p>
+          <p>
+            Estos recursos no están pensados para quedarse en nuestro sitio web:
+            te pedimos que los distribuyas por todas partes. Publicarlos en
+            redes sociales, compartirlos en chats de grupo, pegarlos en las
+            puertas de bodegas, paradas de autobuses, escuelas... en todos los
+            lugares dentro de tu comunidad.
+          </p>
+          <button class="custom-button">Aprende más</button>
+        </div>
+        <!-- (puedes omitir la cuadrícula aquí si no hay ítems) -->
+      </div>
+    </section>
+
+    <!-- SECCIÓN 3: DECIDE CON TU VOTO -->
+    <section id="gotv" class="frame">
+      <div class="content-box green">
+        <div class="text-section">
+          <h2>Decide con tu voto</h2>
+          <p>
+            La absoluta crueldad de nuestro sistema migratorio no es un
+            accidente; es mantenida rigurosamente por funcionarios electos que
+            promueven políticas y discursos anti-inmigrantes en todos los
+            niveles de gobierno.
+          </p>
+          <p>
+            Para desmantelar efectivamente este sistema de opresión, necesitamos
+            reemplazarlos con líderes que adopten un enfoque abolicionista hacia
+            la política migratoria hoy mismo.
+          </p>
+          <p>
+            Haz clic aquí para verificar tu registro de votante, las elecciones
+            próximas en tu comunidad local y las posiciones de los candidatos, y
+            así luchar por un cambio sistémico en las urnas electorales.
+          </p>
+          <button
+            class="custom-button"
+            onclick="window.open('https://www.aclu.org/vote/immigrants-rights','_blank')"
+          >
+            Verifica tu registro
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 4: EXIGE RESPONSABILIDAD -->
+    <section id="hold" class="frame">
+      <div class="content-box blue">
+        <div class="text-section">
+          <h2>Exige responsabilidad</h2>
+          <p>
+            Actualmente, muchas instituciones poderosas están eligiendo la
+            complicidad en lugar del coraje, facilitando activamente la
+            maquinaria de deportaciones de Trump.
+          </p>
+          <p>
+            Las universidades, en particular, se han convertido en focos de esta
+            complicidad: permiten el acceso de ICE a los campus sin órdenes
+            judiciales, comparten datos sensibles sobre el estatus migratorio,
+            alinean a la policía universitaria con ICE y adoptan políticas
+            carcelarias que ponen en riesgo a los estudiantes inmigrantes.
+          </p>
+          <p>
+            ¡Actúa ahora para exigir que las universidades protejan a sus
+            estudiantes de detenciones ilegales y arbitrarias!
+          </p>
+          <button class="custom-button">Exigir ahora</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 5: ORGANIZA TU COMUNIDAD -->
+    <section id="action" class="frame">
+      <div class="content-box purple">
+        <div class="text-section">
+          <h2>Organiza tu comunidad</h2>
+          <p>
+            PODER no se desarrolló en un vacío; fue construido en colaboración
+            con una coalición de organizaciones de confianza que lideran la
+            lucha por la justicia inmigrante.
+          </p>
+          <p>
+            Desde el Immigrant Legal Resource Center hasta la Detention Watch
+            Network, nuestros aliados han dedicado años a organizar, educar y
+            resistir valientemente los sistemas de deshumanización.
+          </p>
+          <p>
+            A lo largo del país, estas organizaciones lideran campañas audaces,
+            como: abogar por el cierre de centros de detención, organizar a
+            estudiantes en campus universitarios y cabildear por legislación
+            pro-inmigrante.
+          </p>
+          <p>
+            Este es el momento de profundizar tu compromiso con la comunidad
+            inmigrante y conectarte con tácticas poderosas y probadas a lo largo
+            del tiempo.
+          </p>
+          <button class="custom-button" onclick="window.open('#','_blank')">
+            ¡Involúcrate aquí!
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>
+        Para consultas de prensa, por favor contacta a: press@genzforchange.org
+      </p>
+      <br />
+      <img
+        src="https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/meddlingkids.png?v=1744848850367"
+        alt="Hecho con amor por los chicos entrometidos de Gen-Z for Change <3"
+      />
+    </footer>
+
+    <script>
+      function scrollToSection(id, el) {
+        document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+        document
+          .querySelectorAll(".fight-subtitle span")
+          .forEach((span) => (span.style.color = "#333"));
+        el.style.color = el.dataset.color;
+      }
+    </script>
+  </body>
+</html>
+ -->
