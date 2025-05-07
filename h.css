@@ -1,5 +1,7 @@
-  /* === Reset & Box Sizing === */
-*, *::before, *::after {
+/* === Reset & Box Sizing === */
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -10,16 +12,16 @@ html {
 }
 
 body {
-  font-family: 'Lexend', sans-serif;
+  font-family: "Lexend", sans-serif;
   line-height: 1.5;
-  color: #231F20;
+  color: #231f20;
   background: linear-gradient(rgba(64, 101, 175, 0.5), rgba(64, 101, 175, 0.5)),
-              url("https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/BlueBackground.png?v=1745193617054")
-              no-repeat center center / cover;
+    url("https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/BlueBackground.png?v=1745193617054")
+      no-repeat center center / cover;
   background-color: #4065af;
 }
 
-a {
+/* a {
   position: absolute;
   top: 0;
   left: 0;
@@ -30,6 +32,24 @@ a {
   text-transform: uppercase;
   letter-spacing: 1px;
   margin: 50px;
+} */
+
+/* only position the back‐to‐home link absolutely */
+a.back-link {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  font-family: "Anton SC", sans-serif;
+  font-size: 21px;
+  text-decoration: none;
+  color: #f8f7f3;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* everything else should flow normally */
+a:not(.back-link) {
+  position: static;
 }
 
 .bullhorn {
@@ -47,7 +67,7 @@ a {
 }
 
 .hero h1 {
-  font-family: 'Anton SC', sans-serif;
+  font-family: "Anton SC", sans-serif;
   font-size: 55px;
   margin-bottom: 10px;
   text-transform: uppercase;
@@ -62,9 +82,12 @@ a {
 
 /* === Content Card === */
 .card {
-  background-image: linear-gradient(rgba(64, 101, 175, 0.5), rgba(64, 101, 175, 0.5)),
-              url("https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/white-crinkled-paper-texture-background.jpg?v=1744848869879")
-              no-repeat center center / cover;
+  background-image: linear-gradient(
+      rgba(64, 101, 175, 0.5),
+      rgba(64, 101, 175, 0.5)
+    ),
+    url("https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/white-crinkled-paper-texture-background.jpg?v=1744848869879")
+      no-repeat center center / cover;
   background: #f8f7f3;
   max-width: 680px;
   margin: -2rem auto 3rem;
@@ -72,14 +95,14 @@ a {
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   z-index: 1;
-  position: relative; 
+  position: relative;
 }
 
 .card h2 {
-  font-family: 'Anton SC', sans-serif;
+  font-family: "Anton SC", sans-serif;
   font-size: 46px;
   color: #4065af;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   text-transform: uppercase;
   text-align: left;
   letter-spacing: 1px;
@@ -92,10 +115,12 @@ a {
 
 /* === CTA Button === */
 .cta-btn {
-  display: inline-block;
-  max-width: 600px;
-  background: #4065AF;
-  color: #F8F7F3;
+  display: block;
+  margin: 2rem auto 0; /* 2rem top-space, auto left/right, 0 bottom */
+  max-width: 90%; /* never exceed the card’s width */
+  white-space: nowrap; /* keep the label on one line */
+  background: #4065af;
+  color: #f8f7f3;
   font-family: "Anton SC", sans-serif;
   font-size: 26px;
   padding: 15px 30px;
@@ -104,14 +129,30 @@ a {
   cursor: pointer;
   transition: background-color 0.2s ease;
   margin-top: 25px;
+  /* undo any absolute from earlier: */
+  position: relative;
+
+  /* make it a full‐width block with breathing room */
+  display: block;
+  margin: 2rem auto 1rem;
+  max-width: 90%;
+  white-space: nowrap;
 }
 
 .cta-btn:hover {
   background-color: transparent;
   outline: solid;
-  outline-color: #4065AF;
+  outline-color: #4065af;
   outline-width: 3px;
-  color: #4065AF;
+  color: #4065af;
+}
+
+@media (max-width: 600px) {
+  .cta-btn {
+    width: 100%; /* fill its container */
+    font-size: 1.1rem; /* a bit smaller on mobile */
+    padding: 12px 0; /* tighter vertical padding */
+  }
 }
 
 /* === Instructions Text === */
@@ -124,7 +165,8 @@ a {
 
 /* === Footer === */
 footer {
-  background: url("https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/AdobeStock_315826297.jpeg?v=1744850684178") no-repeat center / cover;
+  background: url("https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/AdobeStock_315826297.jpeg?v=1744850684178")
+    no-repeat center / cover;
   text-align: center;
   font-size: 16px;
   padding: 175px 50px 50px;
@@ -138,8 +180,7 @@ footer img {
   width: 25%;
 }
 
-@media (max-width: 600px){
-  
+@media (max-width: 600px) {
   footer img {
     width: 100%;
   }
@@ -147,20 +188,19 @@ footer img {
 
 /* === Responsive Styles === */
 @media (max-width: 600px) {
+  .bullhorn {
+    width: 75px;
+    margin-left: 100px;
+    margin-top: 75px;
+  }
 
-.bullhorn {
-  width: 75px;
-  margin-left: 100px;
-  margin-top: 75px;
-}
-  
   .hero {
-  color: #f8f7f3;
-  text-align: center;
-  padding: 25px;
-  margin-top: 0;
-}
-  
+    color: #f8f7f3;
+    text-align: center;
+    padding: 25px;
+    margin-top: 0;
+  }
+
   .hero h1 {
     font-size: 2rem;
   }
@@ -182,5 +222,4 @@ footer img {
     width: 100%;
     text-align: center;
   }
-  
 }

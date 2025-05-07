@@ -454,6 +454,46 @@ mark {
   color: #fafaf5;
 }
 
+.kyr_container {
+  display: flex;
+  justify-content: center;  
+  gap: 25px;             
+  flex-wrap: wrap;     
+  padding: 25px;
+}
+
+.kyr_post {
+  width: 300px;
+  background: #F8F7F3;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: block;
+  margin: 20px auto;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.kyr_post:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.kyr_flyer {
+   width: 300px;
+  background: #F8F7F3;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: block;
+  margin: 20px auto;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.kyr_flyer:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
 /* ─────────────────────────────────────────────── */
 /* TEXTURED BACKGROUNDS */
 
@@ -720,3 +760,12 @@ footer img {
   text-decoration: underline;
   color: #111111;
 }
+
+.civicengine-container {
+    background: #ececec;
+    margin: 0 auto;
+    max-width: 500px;
+    padding: 1rem;
+    border-radius: 0.3rem;
+    opacity: 0.95;
+  }
