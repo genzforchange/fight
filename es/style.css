@@ -19,6 +19,9 @@ body {
   font-style: normal;
   font-optical-sizing: auto;
 }
+.foot {
+  color: black;
+}
 
 .anton-sc-regular,
 .main-title,

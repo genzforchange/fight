@@ -33,6 +33,10 @@ a {
   color: white;
 }
 
+.foot {
+  color: black;
+}
+
 /* ─────────────────────────────────────────────── */
 /* HEADER SECTION */
 
@@ -53,13 +57,14 @@ a {
   gap: 1rem;
   padding: 1rem 2rem;
   border-radius: 24px;
-  background: url("https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/white-crinkled-paper-texture-background.jpg?v=1744848869879") no-repeat center / cover;
+  background: url("https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/white-crinkled-paper-texture-background.jpg?v=1744848869879")
+    no-repeat center / cover;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .after-scroll {
   background-color: transparent;
-/*   transition: background-color 0.2s ease; */
+  /*   transition: background-color 0.2s ease; */
 }
 
 /*    FAILED STICKY TEST    */
@@ -91,7 +96,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-/*   justify-content: flex-start; */
+  /*   justify-content: flex-start; */
   gap: 20px;
   z-index: 1001;
   margin: 10px;
@@ -118,7 +123,8 @@ a {
   align-items: center;
   justify-content: space-between;
   padding: 1rem 2rem;
-  background: url("https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/white-crinkled-paper-texture-background.jpg?v=1744848869879") no-repeat center / cover;
+  background: url("https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/white-crinkled-paper-texture-background.jpg?v=1744848869879")
+    no-repeat center / cover;
   border-radius: 24px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   max-width: 1200px;
@@ -133,7 +139,7 @@ a {
   cursor: pointer;
   display: flex;
   align-items: center;
-  color: #231F20;
+  color: #231f20;
   font-size: 16px;
   gap: 0.2rem;
 }
@@ -155,8 +161,8 @@ a {
   margin-top: 10px;
   padding: 0;
   list-style: none;
-  background: #F8F7F3;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
+  background: #f8f7f3;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   display: none;
   white-space: nowrap;
@@ -172,13 +178,13 @@ a {
   display: flex;
   align-items: center;
   padding: 8px;
-  color: #231F20;
+  color: #231f20;
   text-decoration: none;
   gap: 5px;
 }
 
 .lang-menu li a:hover {
-  background: #F8F7F3;
+  background: #f8f7f3;
 }
 
 /* ─────────────────────────────────────────────── */
@@ -195,11 +201,22 @@ a {
   cursor: pointer;
 }
 
-.letter-F { width: 50px; }
-.letter-I { width: 20px; height: 110px; }
-.letter-G { width: 65px; }
-.letter-H { width: 55px; }
-.letter-T { width: 60px; }
+.letter-F {
+  width: 50px;
+}
+.letter-I {
+  width: 20px;
+  height: 110px;
+}
+.letter-G {
+  width: 65px;
+}
+.letter-H {
+  width: 55px;
+}
+.letter-T {
+  width: 60px;
+}
 
 [class^="letter-"]:hover {
   transform: scale(1.15);
@@ -215,12 +232,12 @@ a {
 @media (max-width: 600px) {
   .site-header {
     height: 100px;
-/*     justify-content: center; */
+    /*     justify-content: center; */
     padding: 1rem;
   }
 
   .bullhorn {
-    width:75px;
+    width: 75px;
     max-width: 150px;
     min-width: 80px;
   }
@@ -231,13 +248,13 @@ a {
     max-width: 25px;
     min-width: 0;
   }
-  
+
   .letter-I {
     height: 60px;
   }
-  
+
   .kyr_container img {
-    width: 200px; 
+    width: 200px;
   }
 }
 
@@ -254,7 +271,6 @@ a {
   position: relative;
   z-index: 1;
   scroll-margin-top: 220px;
-
 }
 
 .main-frame {
@@ -263,11 +279,14 @@ a {
   flex-direction: column;
   text-align: center;
   z-index: 0;
-  background: linear-gradient(rgba(248, 247, 243, 0.75), rgba(248, 247, 243, 0.75)),
-    url("https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/squared-paper-texture.jpg?v=1744862407631") no-repeat center / cover;
+  background: linear-gradient(
+      rgba(248, 247, 243, 0.75),
+      rgba(248, 247, 243, 0.75)
+    ),
+    url("https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/squared-paper-texture.jpg?v=1744862407631")
+      no-repeat center / cover;
   margin-top: -100px;
 }
-
 
 /* ─────────────────────────────────────────────── */
 /* CONTENT SECTIONS */
@@ -355,55 +374,52 @@ mark {
 /* ─────────────────────────────────────────────── */
 /* RESPONSIVE CONTENT */
 @media (max-width: 600px) {
-  
   .main-content {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 25px;
-  max-width: 1200px;
-  margin: 50px;
-  align-items: center;
-  justify-content: space-between;
-}
-  
-.fight-subtitle {
-  font-size: 34px;
-  color: #231f20;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  text-align: right;
-  flex: 1 1 300px;
-  padding-right: 25px;
-  border-right: 1px solid #231f20;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  cursor: pointer;
-}
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    max-width: 1200px;
+    margin: 50px;
+    align-items: center;
+    justify-content: space-between;
+  }
 
+  .fight-subtitle {
+    font-size: 34px;
+    color: #231f20;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: right;
+    flex: 1 1 300px;
+    padding-right: 25px;
+    border-right: 1px solid #231f20;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    cursor: pointer;
+  }
 
-.fight-blurb {
-  font-size: 16px;
-  color: #231f20;
-  flex: 1 1 600px;
-  text-align: left;
-  max-width: 600px;
-  margin-top: 0;
-}
-  
+  .fight-blurb {
+    font-size: 16px;
+    color: #231f20;
+    flex: 1 1 600px;
+    text-align: left;
+    max-width: 600px;
+    margin-top: 0;
+  }
+
   .text-section h2 {
-  font-size: 34px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  margin-bottom: 25px;
-}
-  
-.text-section p {
-  font-size: 16px;
-  margin-bottom: 0px;
-  max-width: 700px;
-}
-  
+    font-size: 34px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+  }
+
+  .text-section p {
+    font-size: 16px;
+    margin-bottom: 0px;
+    max-width: 700px;
+  }
 }
 /* ─────────────────────────────────────────────── */
 /* GRID */
@@ -466,15 +482,15 @@ mark {
 
 .kyr_container {
   display: flex;
-  justify-content: center;  
-  gap: 25px;             
-  flex-wrap: wrap;     
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
   padding: 25px;
 }
 
 .kyr_post {
   width: 300px;
-  background: #F8F7F3;
+  background: #f8f7f3;
   padding: 10px;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
@@ -489,8 +505,8 @@ mark {
 }
 
 .kyr_flyer {
-   width: 300px;
-  background: #F8F7F3;
+  width: 300px;
+  background: #f8f7f3;
   padding: 10px;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
@@ -509,31 +525,36 @@ mark {
 
 .red {
   background: linear-gradient(rgba(239, 67, 71, 0.5), rgba(239, 67, 71, 0.5)),
-    url("https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/RedTexture.png?v=1745193146500") no-repeat center / cover;
+    url("https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/RedTexture.png?v=1745193146500")
+      no-repeat center / cover;
   background-color: #ef4347;
 }
 
 .orange {
   background: linear-gradient(rgba(246, 122, 61, 0.5), rgba(246, 122, 61, 0.5)),
-    url("https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/OrangeTexture.png?v=1745193430524") no-repeat center / cover;
+    url("https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/OrangeTexture.png?v=1745193430524")
+      no-repeat center / cover;
   background-color: #f67a3d;
 }
 
 .green {
   background: linear-gradient(rgba(92, 148, 111, 0.5), rgba(92, 148, 111, 0.5)),
-    url("https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/GreenTexture.png?v=1745193618861") no-repeat center / cover;
+    url("https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/GreenTexture.png?v=1745193618861")
+      no-repeat center / cover;
   background-color: #5c946f;
 }
 
 .blue {
   background: linear-gradient(rgba(64, 101, 175, 0.5), rgba(64, 101, 175, 0.5)),
-    url("https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/BlueBackground.png?v=1745193617054") no-repeat center / cover;
+    url("https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/BlueBackground.png?v=1745193617054")
+      no-repeat center / cover;
   background-color: #4065af;
 }
 
 .purple {
   background: linear-gradient(rgba(73, 74, 110, 0.5), rgba(73, 74, 110, 0.5)),
-    url("https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/PurpleBackground.png?v=1745193649120") no-repeat center / cover;
+    url("https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/PurpleBackground.png?v=1745193649120")
+      no-repeat center / cover;
   background-color: #494a6e;
 }
 
@@ -541,7 +562,8 @@ mark {
 /* FOOTER */
 
 footer {
-  background: url("https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/AdobeStock_315826297.jpeg?v=1744850684178") no-repeat center / cover;
+  background: url("https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/AdobeStock_315826297.jpeg?v=1744850684178")
+    no-repeat center / cover;
   text-align: center;
   font-size: 16px;
   padding: 100px 50px 50px;
@@ -554,8 +576,7 @@ footer img {
   width: 25%;
 }
 
-@media (max-width: 600px){
-  
+@media (max-width: 600px) {
   footer img {
     width: 100%;
   }
