@@ -254,7 +254,7 @@ body {
   width: 8vw;
   max-width: 60px;
   min-width: 32px;
-  height: auto;
+  max-height: auto;
   transition: transform 0.2s ease;
   cursor: pointer;
 }
@@ -262,7 +262,7 @@ body {
 .letter-P { width: 50px; }
 .letter-O { width: 50px; }
 .letter-D { width: 50px; }
-.letter-E { width: 50px; height: 100px; }
+.letter-E { width: 50px; }
 .letter-R { width: 50px; }
 
 [class^="letter-"]:hover {
