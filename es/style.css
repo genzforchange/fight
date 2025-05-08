@@ -92,6 +92,19 @@ body {
   margin: 10px;
 }
 
+/* .twitter-share-button {
+  position: relative;
+  width: 10px;
+  margin: 0;
+  z-index: 1;
+}
+
+.language-dropdown {
+  position: relative;
+  display: flex;
+  align-items: center;
+} */
+
 .twitter-share-button {
   position: relative;
   width: 10px;
@@ -120,6 +133,61 @@ body {
   height: 175px;
   margin: 0 auto;
 }
+
+/* Language button styles */
+/* .lang-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: #231F20;
+  font-size: 16px;
+  gap: 0.2rem;
+} */
+
+/* Flag + arrow */
+/* .flag-emoji {
+  font-size: 16px;
+  margin-right: 3px;
+}
+.arrow {
+  font-size: 16px;
+} */
+
+/* Dropdown menu */
+/* .lang-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 10px;
+  padding: 0;
+  list-style: none;
+  background: #F8F7F3;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
+  border-radius: 5px;
+  display: none;
+  white-space: nowrap;
+  z-index: 10;
+}
+
+.language-dropdown:hover .lang-menu,
+.language-dropdown:focus-within .lang-menu {
+  display: block;
+}
+
+.lang-menu li a {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  color: #231F20;
+  text-decoration: none;
+  gap: 5px;
+}
+
+.lang-menu li a:hover {
+  background: #F8F7F3;
+} */
 
 /* Language button styles */
 .lang-btn {
@@ -176,6 +244,7 @@ body {
   background: #F8F7F3;
 }
 
+
 /* ─────────────────────────────────────────────── */
 /* LETTER STYLES */
 
@@ -190,11 +259,11 @@ body {
   cursor: pointer;
 }
 
-.letter-F { width: 50px; }
-.letter-I { width: 20px; height: 110px; }
-.letter-G { width: 65px; }
-.letter-H { width: 55px; }
-.letter-T { width: 60px; }
+.letter-P { width: 50px; }
+.letter-O { width: 50px; }
+.letter-D { width: 50px; }
+.letter-E { width: 50px; height: 100px; }
+.letter-R { width: 50px; }
 
 [class^="letter-"]:hover {
   transform: scale(1.15);

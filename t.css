@@ -21,17 +21,22 @@ body {
   background-color: #494a6e;
 }
 
-a {
+a.back-link {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 1rem;
+  left: 1rem;
   font-family: "Anton SC", sans-serif;
   font-size: 21px;
   text-decoration: none;
   color: #f8f7f3;
   text-transform: uppercase;
   letter-spacing: 1px;
-  margin: 50px;
+  padding: 25px;
+}
+
+/* everything else should flow normally */
+a:not(.back-link) {
+  position: static;
 }
 
 .bullhorn {
@@ -129,21 +134,22 @@ a {
 
 /* === Footer === */
 footer {
-  background: url("https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/AdobeStock_315826297.jpeg?v=1744850684178") no-repeat center / cover;
+  background: url("https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/AdobeStock_315826297.jpeg?v=1744850684178")
+    no-repeat center / cover;
   text-align: center;
   font-size: 16px;
-  padding: 100px 50px 50px;
-  margin-top: -175px;
+  padding: 125px 50px 50px;
+  margin-top: -100px;
   position: relative;
   z-index: 0;
 }
 
 footer img {
+  margin-top: 25px;
   width: 25%;
 }
 
-@media (max-width: 600px){
-  
+@media (max-width: 600px) {
   footer img {
     width: 100%;
   }
@@ -151,6 +157,19 @@ footer img {
 
 /* === Responsive Styles === */
 @media (max-width: 600px) {
+  .bullhorn {
+    width: 100px;
+    margin-left: 100px;
+    margin-top: 50px;
+  }
+
+  .hero {
+    color: #f8f7f3;
+    text-align: center;
+    padding: 25px;
+    margin-top: 0;
+  }
+
   .hero h1 {
     font-size: 2rem;
   }

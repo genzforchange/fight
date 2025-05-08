@@ -24,7 +24,7 @@
     <!--     <link rel="alternate" href="https://gz4c-fight.glitch.me/index.html" hreflang="en" />
     <link rel="alternate" href="https://gz4c-fight.glitch.me/es/index.html" hreflang="es" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Herramientas FIGHT</title>
+    <title>PODER</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -41,6 +41,7 @@
             class="bullhorn"
             src="https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/BullHorn.svg?v=1744859151494"
             alt="Bullhorn"
+            onclick = "scrollToSection('frame main-frame')"
           />
           <img
             class="letter-P"
@@ -49,7 +50,7 @@
             data-hover-src="https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/OrangeP.svg?v=1746474922130"
             onmouseover="this.src = this.dataset.hoverSrc"
             onmouseout="this.src = 'https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/P.svg?v=1746474893372'"
-            onclick="scrollToSection('fundraise')"
+            onclick="scrollToSection('invoke')"
           />
           <img
             class="letter-O"
@@ -58,7 +59,7 @@
             data-hover-src="https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/PurpleO.svg?v=1746474926704"
             onmouseover="this.src = this.dataset.hoverSrc"
             onmouseout="this.src = 'https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/O.svg?v=1746474901384'"
-            onclick="scrollToSection('invoke')"
+            onclick="scrollToSection('action')"
           />
           <img
             class="letter-D"
@@ -85,10 +86,50 @@
             data-hover-src="https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/RedR.svg?v=1746474938028"
             onmouseover="this.src = this.dataset.hoverSrc"
             onmouseout="this.src = 'https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/R.svg?v=1746474918040'"
-            onclick="scrollToSection('action')"
+            onclick="scrollToSection('fundraise')"
           />
         </div>
-        <div class="language-dropdown">
+         <div class="header-actions">
+          <div class="language-dropdown">
+            <button class="lang-btn">
+              <span class="flag-emoji">🇺🇸</span> EN <span class="arrow">▾</span>
+            </button>
+            <ul class="lang-menu">
+              <li>
+                <a href="https://gz4c.org/FIGHT/"> <span class="flag-emoji">🇺🇸</span> EN </a>
+              </li>
+              <li>
+                <a href="https://gz4c.org/FIGHT/es/">
+                  <span class="flag-emoji">🇲🇽</span> ES
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!--           <a
+            href="https://twitter.com/share?ref_src=twsrc%5Etfw"
+            class="twitter-share-button"
+            data-text="FIGHT Toolkit Sample Embed Tweet "
+            data-via="genzforchange"
+            data-show-count="false"
+            >Tweet</a
+          > -->
+
+          <a
+            href="https://twitter.com/share?ref_src=twsrc%5Etfw"
+            class="twitter-share-button"
+            data-text="When the immigrant community is under attack, what do we do? Stand UP, FIGHT Back! The Trump admin wants us to feel powerless as they ramp up cruel detention and deportation campaigns. Today, we say no more! TAKE ACTION with @genzforchange here!"
+            data-url="https://gz4c.org/FIGHT/"
+            data-show-count="false"
+            >Tweet</a
+          >
+        </div>
+        <script
+          async
+          src="https://platform.twitter.com/widgets.js"
+          charset="utf-8"
+        ></script>
+    
+<!--         <div class="language-dropdown">
           <button class="lang-btn">
             <span class="flag-emoji">🇺🇸</span> EN <span class="arrow">▾</span>
           </button>
@@ -105,19 +146,19 @@
             </li>
           </ul>
         </div>
-        <a
-          href="https://twitter.com/share?ref_src=twsrc%5Etfw"
-          class="twitter-share-button"
-          data-text="Me uno al toolkit PODER para la justicia inmigrante 🚨"
-          data-via="genzforchange"
-          data-show-count="false"
-          >Tweet</a
-        >
+ <a
+            href="https://twitter.com/share?ref_src=twsrc%5Etfw"
+            class="twitter-share-button"
+            data-text="When the immigrant community is under attack, what do we do? Stand UP, FIGHT Back! The Trump admin wants us to feel powerless as they ramp up cruel detention and deportation campaigns. Today, we say no more! TAKE ACTION with @genzforchange here!"
+            data-url="https://gz4c.org/FIGHT/"
+            data-show-count="false"
+            >Tweet</a
+          >
         <script
           async
           src="https://platform.twitter.com/widgets.js"
           charset="utf-8"
-        ></script>
+        ></script> -->
       </header>
     </div>
 
@@ -168,23 +209,11 @@
         </nav>
         <div class="fight-blurb">
           <p>
-            La política migratoria actual en Estados Unidos no solo es
-            insuficiente, sino que también es confusa y cruel a propósito. Cada
-            día, los inmigrantes enfrentan la exclusión de pilares esenciales de
-            nuestra sociedad, el miedo constante y la brutalización por parte
-            del país, simplemente por buscar una nueva vida.
+            La política migratoria actual en Estados Unidos no solo es insuficiente, sino que también es confusa y cruel a propósito. Cada día, los inmigrantes enfrentan la exclusión de pilares esenciales de nuestra sociedad, el miedo constante y la brutalización por parte del país, simplemente por existir.
             <br /><br />
-            Con el regreso de la administración Trump, hemos visto un fuerte
-            aumento en la demonización y la intimidación violenta contra las
-            comunidades inmigrantes, tanto a nivel retórico, legislativo como en
-            acciones sobre el terreno.
+            Con el regreso de la administración Trump, hemos visto un fuerte aumento en la demonización y la intimidación violenta contra las comunidades inmigrantes, tanto a nivel retórico, legislativo como en acciones sobre el terreno.
             <br /><br />
-            En respuesta, Gen-Z for Change ha lanzado <b>PODER:</b> una
-            herramienta diseñada para combatir este sistema de opresión a través
-            de la movilización digital con impacto. Basada en los principios de
-            la abolición, PODER busca desmantelar este violento status quo y
-            construir un futuro que garantice seguridad, libertad y dignidad
-            para todas las personas inmigrantes.
+            En respuesta, Gen-Z X El Cambio ha lanzado PODER: una herramienta diseñada para combatir estos ataques hacía los inmigrantes a través de la movilización digital con impacto. Basada en los principios de la abolición, PODER busca desmantelar el statu quo violento y construir un futuro que garantice seguridad, libertad y dignidad para todas las personas inmigrantes.
           </p>
         </div>
       </div>
@@ -196,20 +225,13 @@
         <div class="text-section">
           <h2>Reúne fondos</h2>
           <p>
-            En todo el país, grupos de respuesta rápida se están movilizando
-            para ofrecer alertas de emergencia, apoyo legal e intervenciones
-            materiales frente a las actividades de ICE. Estas organizaciones, en
-            su mayoría comunitarias y de base, son salvavidas incuestionables
-            para las comunidades inmigrantes, pero a menudo carecen del
-            financiamiento institucional y de los recursos necesarios para
-            operar.
+            En todo el país, grupos de respuesta rápida se están movilizando para ofrecer alertas de emergencia, apoyo legal e intervenciones materiales frente a las actividades de ICE. Estas organizaciones, en su mayoría comunitarias y de base, son salvavidas incuestionables para las comunidades inmigrantes, pero a menudo carecen del financiamiento institucional y de los recursos necesarios para operar. Divide tu donación entre 23 de estos grupos cruciales, ayudando a sostener su defensa en primera línea contra la violencia estatal.
           </p>
-          <button
+         <a href = "https://secure.actblue.com/donate/fight-ice" target ="_blank"> <button
             class="fund-button"
-            onclick="window.open('https://secure.actblue.com/donate/fight-ice','_blank')"
           >
             DONAR AQUÍ
-          </button>
+          </button></a>
         </div>
       </div>
     </section>
@@ -226,20 +248,13 @@
             >
           </p>
           <p>
-            Ante la intimidación y manipulación de ICE, conocer tus derechos
-            puede ser la diferencia entre la seguridad y la vulnerabilidad.
+            Ante la intimidación y manipulación de ICE, conocer tus derechos puede ser la diferencia entre la seguridad y la vulnerabilidad
           </p>
           <p>
-            En asociación con el Immigrant Legal Resource Center y United We
-            Dream, Gen-Z for Change ha desarrollado recursos concisos y
-            accesibles diseñados para empoderar y educar de manera efectiva.
+            En asociación con el Immigrant Legal Resource Center, Gen-Z for Change ha desarrollado recursos, concisos y accesibles diseñados para empoderar y educar de manera efectiva.
           </p>
           <p>
-            Estos recursos no solo son para nuestro sitio web: te pedimos que
-            los distribuyas por todas partes. Puedes publicarlos en redes
-            sociales, compartirlos en chats de grupo, pegarlos en puertas de
-            bodegas, paradas de autobús, escuelas… donde tu comunidad lo
-            necesite.
+            Estos recursos no solo son por nuestro sitio web. Se pueden publicar en redes sociales, compartidos en chats de grupo, pegados en las puertas de bodegas, paradas de autobuses, escuelas... en todos los lugares dentro de tu comunidad.
           </p>
           <a
             href="https://cdn.glitch.me/859e2062-945b-4f6d-a3dc-96c31891dcad/KnowYourRightsGenZforChange.pdf?v=1746556695409"
@@ -256,22 +271,13 @@
         <div class="text-section">
           <h2>Decide con tu voto</h2>
           <p>
-            La absoluta crueldad de nuestro sistema migratorio no es un
-            accidente; es mantenida por funcionarios electos que promueven
-            políticas y discursos anti-inmigrantes en todos los niveles de
-            gobierno.
+            Nuestro sistema migratorio no está roto; está funcionando exactamente como fue diseñado. Nos toca reemplazarlos por líderes que adopten un enfoque abolicionista de la política migratoria hoy mismo.
           </p>
           <p>
-            Para desmantelar efectivamente este sistema de opresión, necesitamos
-            reemplazarlos con líderes que adopten un enfoque abolicionista hacia
-            la política migratoria hoy mismo.
+            Usa nuestra herramienta de BallotReady para verificar tu registro de votante, las elecciones próximas en tu comunidad local y las posiciones de los candidatos, y así luchar por un cambio sistémico en las elecciones.
           </p>
-          <p>
-            Haz clic a continuación para verificar tu registro de votante, las
-            próximas elecciones en tu comunidad local y las posiciones de los
-            candidatos, y así luchar por un cambio sistémico en las urnas.
-          </p>
-          <a href="https://app.ballotready.org/">
+          <i></i>
+          <a href="https://look2024ward.org/gotv">
             <button class="gotv-button">VERIFICA TU VOTO</button>
           </a>
         </div>
@@ -302,9 +308,9 @@
             personal no será incluida en ningún envío. ¡Puedes enviar tantas
             solicitudes como quieras!
           </p>
-          <button class="hold-button" onclick="window.open('h.html')">
+          <a href = "es/h"> <button class="hold-button">
             TOMA ACCIÓN
-          </button>
+          </button></a>
         </div>
       </div>
     </section>
@@ -334,9 +340,9 @@
             inmigrante y conectarte con tácticas poderosas y probadas a lo largo
             del tiempo.
           </p>
-          <button class="tap-button" onclick="window.open('t.html')">
+          <a href = "/es/t">   <button class="tap-button">
             INVOLÚCRATE
-          </button>
+          </button></a>
         </div>
       </div>
     </section>
@@ -344,13 +350,18 @@
     <footer>
       <p>
         Para consultas de prensa, por favor contáctanos:
-        press@genzforchange.org.
+        <a href = "mailto:press@genzforchange.org.">press@genzforchange.org.</a>
       </p>
       <br />
+      <a
+        href="https://www.genzforchange.org/"
+        target="_blank"
+      >
       <img
         src="https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/meddlingkids.png?v=1744848850367"
         alt="Hecho con amor por los chicos entrometidos de Gen-Z for Change"
       />
+              </a>
     </footer>
         <script src="script.js"></script>
 <!--     <script>
