@@ -223,3 +223,20 @@ footer img {
     text-align: center;
   }
 }
+.card ol,
+.card ul {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+
+.card ol li,
+.card ul li {
+  margin-bottom: 0.75rem;
+}
+
+.card ol li p {
+  margin-top: 0.25rem;
+  font-size: 0.9rem;
+  color: #231f20;
+  line-height: 1.4;
+}
