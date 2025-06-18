@@ -21,6 +21,10 @@ body {
   background-color: #4065af;
 }
 
+a{
+  color: #4065af;
+}
+
 /* a {
   position: absolute;
   top: 0;
@@ -148,6 +152,17 @@ a:not(.back-link) {
   color: #4065af;
 }
 
+.shortcut-icon{
+  height: 1em;
+  width: auto;
+  padding-top:.2em;
+}
+
+.shortcut-preview{
+  margin: 5px 0;
+  max-height: 100px;
+}
+
 @media (max-width: 600px) {
   .cta-btn {
     width: 100%; /* fill its container */
@@ -174,7 +189,7 @@ footer {
   margin-top: -100px;
   position: relative;
   z-index: 0;
-  color: black; 
+  color: black;
 }
 
 footer img {
@@ -224,4 +239,22 @@ footer img {
     width: 100%;
     text-align: center;
   }
+}
+
+.card ol,
+.card ul {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+
+.card ol li,
+.card ul li {
+  margin-bottom: 0.75rem;
+}
+
+.card ol li p {
+  margin-top: 0.25rem;
+  font-size: 0.9rem;
+  color: #231f20;
+  line-height: 1.4;
 }
