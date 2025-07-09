@@ -258,3 +258,55 @@ footer img {
   color: #231f20;
   line-height: 1.4;
 }
+
+/* test css */
+/* Tabs container */
+.tabs {
+  display: flex;
+  border-bottom: 2px solid #4065af;
+  margin-bottom: 1rem;
+}
+
+/* Tab buttons */
+.tab-btn {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  background: #f8f7f3;
+  border: none;
+  border-bottom: 3px solid transparent;
+  font-family: "Anton SC", sans-serif;
+  text-transform: uppercase;
+  color: #4065af;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.tab-btn:hover {
+  background: #e2e8f0;
+}
+
+.tab-btn.active {
+  border-color: #4065af;
+  background: #ffffff;
+}
+
+/* Content panels */
+.tab-contents {
+  position: relative;
+}
+
+.tab-content {
+  display: none;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* Simple fade-in */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(5px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
