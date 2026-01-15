@@ -16,7 +16,7 @@ body {
   line-height: 1.5;
   color: #231f20;
   background: linear-gradient(rgba(64, 101, 175, 0.5), rgba(64, 101, 175, 0.5)),
-    url("https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/PurpleBackground.png?v=1745193649120")
+    url("assets/PurpleBackground.png")
       no-repeat center center / cover;
   background-color: #494a6e;
 }
@@ -73,7 +73,7 @@ a:not(.back-link) {
       rgba(64, 101, 175, 0.5),
       rgba(64, 101, 175, 0.5)
     ),
-    url("https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/white-crinkled-paper-texture-background.jpg?v=1744848869879")
+    url("assets/WhiteBackground.png")
       no-repeat center center / cover;
   background: #f8f7f3;
   max-width: 680px;

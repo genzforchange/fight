@@ -57,7 +57,7 @@ a {
   gap: 1rem;
   padding: 1rem 2rem;
   border-radius: 24px;
-  background: url("https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/white-crinkled-paper-texture-background.jpg?v=1744848869879")
+  background: url("assets/WhiteBackground.png")
     no-repeat center / cover;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
@@ -123,7 +123,7 @@ a {
   align-items: center;
   justify-content: space-between;
   padding: 1rem 2rem;
-  background: url("https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/white-crinkled-paper-texture-background.jpg?v=1744848869879")
+  background: url("assets/WhiteBackground.png")
     no-repeat center / cover;
   border-radius: 24px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
@@ -308,7 +308,7 @@ a {
       rgba(248, 247, 243, 0.75),
       rgba(248, 247, 243, 0.75)
     ),
-    url("https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/squared-paper-texture.jpg?v=1744862407631")
+    url("assets/WhiteBackground.png")
       no-repeat center / cover;
   margin-top: -100px;
 }
@@ -567,35 +567,35 @@ mark {
 
 .red {
   background: linear-gradient(rgba(239, 67, 71, 0.5), rgba(239, 67, 71, 0.5)),
-    url("https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/RedTexture.png?v=1745193146500")
+    url("assets/RedTexture.png")
       no-repeat center / cover;
   background-color: #ef4347;
 }
 
 .orange {
   background: linear-gradient(rgba(246, 122, 61, 0.5), rgba(246, 122, 61, 0.5)),
-    url("https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/OrangeTexture.png?v=1745193430524")
+    url("assets/OrangeTexture.png")
       no-repeat center / cover;
   background-color: #f67a3d;
 }
 
 .green {
   background: linear-gradient(rgba(92, 148, 111, 0.5), rgba(92, 148, 111, 0.5)),
-    url("https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/GreenTexture.png?v=1745193618861")
+    url("assets/GreenTexture.png")
       no-repeat center / cover;
   background-color: #5c946f;
 }
 
 .blue {
   background: linear-gradient(rgba(64, 101, 175, 0.5), rgba(64, 101, 175, 0.5)),
-    url("https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/BlueBackground.png?v=1745193617054")
+    url("assets/BlueTexture.png")
       no-repeat center / cover;
   background-color: #4065af;
 }
 
 .purple {
   background: linear-gradient(rgba(73, 74, 110, 0.5), rgba(73, 74, 110, 0.5)),
-    url("https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/PurpleBackground.png?v=1745193649120")
+    url("assets/PurpleTexture.png")
       no-repeat center / cover;
   background-color: #494a6e;
 }
@@ -604,7 +604,7 @@ mark {
 /* FOOTER */
 
 footer {
-  background: url("https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/AdobeStock_315826297.jpeg?v=1744850684178")
+  background: url("assets/AdobeStock_315826297.jpeg")
     no-repeat center / cover;
   text-align: center;
   font-size: 16px;
