@@ -15,8 +15,8 @@ class NoCacheHTTPRequestHandler(http.server.SimpleHTTPRequestHandler):
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
+socketserver.TCPServer.allow_reuse_address = True
 with socketserver.TCPServer((HOST, PORT), NoCacheHTTPRequestHandler) as httpd:
-    httpd.allow_reuse_address = True
     print(f"Server running at http://{HOST}:{PORT}/")
     print("Press Ctrl+C to stop the server")
     try:
