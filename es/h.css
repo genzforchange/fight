@@ -16,7 +16,7 @@ body {
   line-height: 1.5;
   color: #231f20;
   background: linear-gradient(rgba(64, 101, 175, 0.5), rgba(64, 101, 175, 0.5)),
-    url("https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/BlueBackground.png?v=1745193617054")
+    url("assets/BlueTexture.png")
       no-repeat center center / cover;
   background-color: #4065af;
 }

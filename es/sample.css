@@ -262,11 +262,21 @@ body {
   cursor: pointer;
 }
 
-.letter-P { width: 50px; }
-.letter-O { width: 50px; }
-.letter-D { width: 50px; }
-.letter-E { width: 50px; }
-.letter-R { width: 50px; }
+.letter-P {
+  width: 70px;
+}
+.letter-O {
+  width: 65px;
+}
+.letter-D {
+  width: 75px;
+}
+.letter-E {
+  width: 65px !important;
+}
+.letter-R {
+  width: 70px;
+}
 
 [class^="letter-"]:hover {
   transform: scale(1.15);

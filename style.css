@@ -220,19 +220,19 @@ a {
 }
 
 .letter-P {
-  width: 50px;
+  width: 65px;
 }
 .letter-O {
-  width: 50px;
+  width: 70px;
 }
 .letter-D {
-  width: 50px;
+  width: 65px;
 }
 .letter-E {
-  width: 40px !important;
+  width: 50px !important;
 }
 .letter-R {
-  width: 50px;
+  width: 65px;
 }
 
 [class^="letter-"]:hover {
