@@ -242,3 +242,70 @@ footer img {
   color: #231f20;
   line-height: 1.4;
 }
+
+.language-dropdown {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: float;
+  align-items: center;
+  /* color: white; */
+
+}
+
+/* Language button styles */
+/* Language button styles */
+
+.lang-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: #f8f7f3;
+  font-size: 16px;
+  gap: 0.2rem;
+}
+
+/* Flag + arrow */
+.flag-emoji {
+  font-size: 16px;
+  margin-right: 3px;
+}
+
+.arrow {
+  font-size: 16px;
+}
+
+/* Dropdown menu */
+.lang-menu {
+  /* position: absolute;
+  top: 100%; */
+  margin-top: 10px;
+  padding: 0;
+  list-style: none;
+  background: #f8f7f3;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  display: none;
+  white-space: nowrap;
+  z-index: 10;
+}
+
+.language-dropdown:hover .lang-menu,
+.language-dropdown:focus-within .lang-menu {
+  display: block;
+}
+
+.lang-menu li a {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  color: #231f20;
+  text-decoration: none;
+  gap: 5px;
+}
+
+.lang-menu li a:hover {
+  background: #f8f7f3;
+}
