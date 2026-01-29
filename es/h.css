@@ -16,8 +16,7 @@ body {
   line-height: 1.5;
   color: #231f20;
   background: linear-gradient(rgba(64, 101, 175, 0.5), rgba(64, 101, 175, 0.5)),
-    url("assets/BlueTexture.png")
-      no-repeat center center / cover;
+    url("assets/BlueTexture.png") no-repeat center center / cover;
   background-color: #4065af;
 }
 
@@ -82,12 +81,9 @@ a:not(.back-link) {
 
 /* === Content Card === */
 .card {
-  background-image: linear-gradient(
-      rgba(64, 101, 175, 0.5),
-      rgba(64, 101, 175, 0.5)
-    ),
-    url("https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/white-crinkled-paper-texture-background.jpg?v=1744848869879")
-      no-repeat center center / cover;
+  background-image: linear-gradient(rgba(64, 101, 175, 0.5),
+      rgba(64, 101, 175, 0.5)),
+    url("https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/white-crinkled-paper-texture-background.jpg?v=1744848869879") no-repeat center center / cover;
   background: #f8f7f3;
   max-width: 680px;
   margin: -2rem auto 3rem;
@@ -116,9 +112,12 @@ a:not(.back-link) {
 /* === CTA Button === */
 .cta-btn {
   display: block;
-  margin: 2rem auto 0; /* 2rem top-space, auto left/right, 0 bottom */
-  max-width: 90%; /* never exceed the card’s width */
-  white-space: nowrap; /* keep the label on one line */
+  margin: 2rem auto 0;
+  /* 2rem top-space, auto left/right, 0 bottom */
+  max-width: 90%;
+  /* never exceed the card’s width */
+  white-space: nowrap;
+  /* keep the label on one line */
   background: #4065af;
   color: #f8f7f3;
   font-family: "Anton SC", sans-serif;
@@ -149,9 +148,12 @@ a:not(.back-link) {
 
 @media (max-width: 600px) {
   .cta-btn {
-    width: 100%; /* fill its container */
-    font-size: 1.1rem; /* a bit smaller on mobile */
-    padding: 12px 0; /* tighter vertical padding */
+    width: 100%;
+    /* fill its container */
+    font-size: 1.1rem;
+    /* a bit smaller on mobile */
+    padding: 12px 0;
+    /* tighter vertical padding */
   }
 }
 
@@ -165,8 +167,7 @@ a:not(.back-link) {
 
 /* === Footer === */
 footer {
-  background: url("https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/AdobeStock_315826297.jpeg?v=1744850684178")
-    no-repeat center / cover;
+  background: url("https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/AdobeStock_315826297.jpeg?v=1744850684178") no-repeat center / cover;
   text-align: center;
   font-size: 16px;
   padding: 175px 50px 50px;
@@ -223,6 +224,7 @@ footer img {
     text-align: center;
   }
 }
+
 .card ol,
 .card ul {
   margin: 1rem 0;
